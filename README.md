@@ -21,7 +21,9 @@ A Python automation project that **searches for fresher jobs and internships** i
 
 ---
 
-## Requirements
+
+
+## 🛠 Requirements
 
 - Python 3.10+
 - GitHub account for Actions
@@ -30,7 +32,10 @@ A Python automation project that **searches for fresher jobs and internships** i
 
 ---
 
-## Installation
+
+
+
+## 📦 Installation
 
 1. **Clone the repository**
 
@@ -38,6 +43,8 @@ A Python automation project that **searches for fresher jobs and internships** i
 git clone https://github.com/priyanka-kanaki/daily-jobs-alert.git
 cd daily-jobs-alert
 ```
+
+
 2. **Create a virtual environment and activate it**
 
 ```bash
@@ -52,9 +59,11 @@ venv\Scripts\activate     # Windows
 pip install -r requirements.txt
 ```
 
-## Setup
 
-1. **GitHub Secrets**
+
+## 🔑 Setup
+
+**1. GitHub Secrets**
 
 Go to your repo → Settings → Secrets → Actions and add:
 
@@ -67,28 +76,34 @@ Go to your repo → Settings → Secrets → Actions and add:
 
 Do not store secrets directly in the repo or .env file.
 
-2. **Workflow**
+
+
+**2. Workflow**
 
 The GitHub Actions workflow runs daily at 12 PM IST and triggers the Python script automatically.
 You can also run it manually via Actions → Run workflow.
 
-## Usage
+
+
+## ▶️ Usage
 
 To test locally:
 ```bash
 python main.py
 ```
 
+
+
 The script will fetch the latest fresher jobs and send an email to the configured Gmail account.
 
-**Security**
+**🔒 Security**
 
 - All sensitive credentials are stored in GitHub Secrets, never in the repo.
 - .env and venv/ are ignored in .gitignore.
 
 
 
-**Notes**
+**⚠️ Notes**
 
 - Gmail App Password is required because Google blocks normal password login from scripts.
 - Make sure your Google API Key and CSE ID are valid and restricted to your project.
